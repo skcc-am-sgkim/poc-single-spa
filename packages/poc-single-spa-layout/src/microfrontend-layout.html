@@ -17,11 +17,13 @@
 
   -->
 
-  <main class="h-screen bg-slate-600">
+  <main class="h-screen bg-slate-600 flex flex-col">
     <section class="text-white">this is layout!</section>
-    <route default>
-      <application name="@poc/layout-comp"></application>
-      <application name="@poc/nexacro-adapter"></application>
-    </route>
+    <application name="@poc/layout-comp"></application>
+    <div class="h-full">
+      <route default>
+        <application name="@poc/nexacro-adapter"></application>
+      </route>
+    </div>
   </main>
 </single-spa-router>

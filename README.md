@@ -37,4 +37,7 @@ tailwind.config.js, postcss.config.js, tailwind.css 파일 복사
 index.js에 import './tailwind.css'; 코드 추가
 webpack.config.js 에 postcss-loader 코드 추가
 
-# 실행
+## 전체 실행
+npm start
+
+http://localhost:9000/

@@ -1,5 +1,16 @@
 {
   "name": "poc-single-spa",
   "private": true,
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start-layout": "cd packages/poc-single-spa-layout && npm start",
+    "start-layout-comp": "cd packages/poc-single-spa-layout-comp && npm start",
+    "start-nexacro-adampter": "cd packages/poc-single-spa-nexacro-adapter && npm start",
+    "start": "concurrently 'npm:start-*'"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
 }

@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#single-spa-application\:\@poc\/nexacro-adapter {
+    height: 100%;
+} 

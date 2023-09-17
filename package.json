@@ -1,0 +1,5 @@
+{
+  "name": "poc-single-spa",
+  "private": true,
+  "workspaces": ["packages/*"]
+}

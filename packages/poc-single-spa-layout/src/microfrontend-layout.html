@@ -1,0 +1,27 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main class="h-screen bg-slate-600">
+    <section class="text-white">this is layout!</section>
+    <route default>
+      <application name="@poc/layout-comp"></application>
+      <application name="@poc/nexacro-adapter"></application>
+    </route>
+  </main>
+</single-spa-router>

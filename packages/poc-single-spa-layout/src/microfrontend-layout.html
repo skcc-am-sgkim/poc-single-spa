@@ -17,13 +17,22 @@
 
   -->
 
-  <main class="h-screen bg-slate-600 flex flex-col">
-    <section class="text-white">this is layout!</section>
-    <application name="@poc/layout-comp"></application>
-    <div class="h-full">
-      <route default>
-        <application name="@poc/nexacro-adapter"></application>
-      </route>
+  <main class="h-screen flex flex-col">
+    <section class="bg-slate-200 p-5">
+      <a href="/" >poc single-spa with nexacro</a>
+    </section>
+
+    <div class="flex-grow flex flex-row">
+      <div class="w-1/6 bg-slate-100">
+        <application name="@poc/layout-comp"></application>
+      </div>
+      <div class="flex-grow">
+        <route path="nexacro-adapter">
+          <application name="@poc/nexacro-adapter"></application>
+        </route>
+        <route default>
+        </route>
+      </div>
     </div>
   </main>
 </single-spa-router>

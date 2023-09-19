@@ -1,6 +1,7 @@
 # history
 
 ## single-spa 프로젝트 추가
+
 create-single-spa single-spa-layout \
 --dir poc-single-spa-layout \
 --framework react \
@@ -19,7 +20,7 @@ create-single-spa single-spa-layout-comp \
 --moduleType app-parcel \
 --layout
 
-create-single-spa  single-spa-nexacro-adapter \
+create-single-spa single-spa-nexacro-adapter \
 --dir poc-single-spa-nexacro-adapter \
 --framework react \
 --packageManager npm \
@@ -29,15 +30,20 @@ create-single-spa  single-spa-nexacro-adapter \
 --layout
 
 ## nexacro project 추가
+
 nexacro studio로 생성
 
 ## tailwindcss 추가
+
 npm install autoprefixer postcss postcss-loader tailwindcss
-tailwind.config.js, postcss.config.js, tailwind.css 파일 복사 
+tailwind.config.js, postcss.config.js, tailwind.css 파일 복사
 index.js에 import './tailwind.css'; 코드 추가
 webpack.config.js 에 postcss-loader 코드 추가
 
 ## 전체 실행
+
 npm start
 
 http://localhost:9000/
+http://127.0.0.1:4098/
+http://127.0.0.1:4098/nexacro-adapter.html?menu=4

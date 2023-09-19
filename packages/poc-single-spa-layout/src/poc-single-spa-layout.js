@@ -5,7 +5,7 @@ import {
   constructLayoutEngine,
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
-import './tailwind.css';
+import "./tailwind.css";
 
 const routes = constructRoutes(microfrontendLayout);
 const applications = constructApplications({
